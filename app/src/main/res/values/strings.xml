@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FYP Application</string>
+
+    <!-- Login and Registration -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="register_link">Don\'t have an account? Register here</string>
+    <string name="login_link">Already have an account? Login here</string>
+    <string name="fill_all_fields">Please fill all fields</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="valid_email">Please enter a valid email address</string>
+    <string name="login_failed">Login failed: %1$s</string>
+    <string name="registration_successful">Registration successful. Please login.</string>
+    <string name="registration_failed">Registration failed: %1$s</string>
+
+    <!-- Dashboard Titles -->
+    <string name="student_dashboard_title">Student Dashboard</string>
+    <string name="supervisor_dashboard_title">Supervisor Dashboard</string>
+
+    <!-- Welcome Messages -->
+    <string name="welcome_message">Welcome, %1$s!</string>
+    <string name="student_default">Student</string>
+    <string name="supervisor_default">Supervisor</string>
+
+    <!-- Menu Items -->
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+    <!-- Dashboard Cards - Student -->
+    <string name="my_projects">My Projects</string>
+
+
+    <!-- Dashboard Cards - Supervisor -->
+    <string name="my_students">My Students</string>
+    <string name="evaluations">Evaluations</string>
+
+        <!-- Student Dashboard Strings -->
+        <string name="welcome_student">Welcome, Student!</string>
+        <string name="student_dashboard">Student Dashboard</string>
+        <string name="projects">Projects</string>
+        <string name="schedule">Schedule</string>
+        <string name="submissions">Submissions</string>
+        <string name="feedback">Feedback</string>
+
+        <!-- Content descriptions for accessibility -->
+        <string name="projects_icon">Projects icon</string>
+        <string name="schedule_icon">Schedule icon</string>
+        <string name="submissions_icon">Submissions icon</string>
+        <string name="feedback_icon">Feedback icon</string>
+
+
+    <!-- Coming Soon Messages -->
+    <string name="students_coming_soon">Students feature coming soon</string>
+    <string name="projects_coming_soon">Projects feature coming soon</string>
+    <string name="evaluations_coming_soon">Evaluations feature coming soon</string>
+    <string name="schedule_coming_soon">Schedule feature coming soon</string>
+    <string name="profile_coming_soon">Profile feature coming soon</string>
+    <string name="settings_coming_soon">Settings feature coming soon</string>
+    <string name="feedback_coming_soon">Feedback feature coming soon</string>
+    <string name="submissions_coming_soon">Submissions feature coming soon</string>
+    <string name="student">Student</string>
+    <!-- Profile & Settings Strings -->
+    <string name="profile_information">Profile Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="department">Department</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="app_settings">Application Settings</string>
+    <string name="appearance">Appearance</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="security">Security</string>
+    <string name="change_password">Reset Password</string>
+    <string name="save_settings">Save Settings</string>
+
+        <string name="profile_updated_successfully">Profile updated successfully</string>
+        <string name="error_name_required">Name is required</string>
+        <string name="error_student_id_required">Student ID is required</string>
+        <string name="error_department_required">Department is required</string>
+        <string name="error_invalid_phone">Invalid phone number</string>
+
+
+        <!-- Profile Strings -->
+        <string name="profile_info">Profile Information</string>
+        <string name="supervisor_id">Supervisor ID</string>
+        <string name="phone">Phone Number</string>
+    <!-- Add these to your strings.xml file -->
+
+    <string name="schedule_description">Manage your supervision meetings and view your project timeline.</string>
+    <string name="submissions_description">Submit your project deliverables and track your progress.</string>
+    <string name="feedback_description">View feedback from your supervisor on your work.</string>
+    <string name="view_all_projects">View All Projects</string>
+    <!-- Add this to your strings.xml file -->
+    <string name="created_date_format">Created: %1$s</string>
+    <!-- Add these to your strings.xml file -->
+    <string name="add_milestone">Add Milestone</string>
+    <string name="edit_milestone">Edit Milestone</string>
+    <string name="milestone_title">Milestone Title</string>
+    <string name="milestone_description">Description (optional)</string>
+    <string name="due_date">Due Date:</string>
+    <string name="select_date">Select Date</string>
+    <string name="mark_completed">Mark as completed</string>
+    <string name="no_milestones">No milestones added yet</string>
+    <string name="milestone_saved">Milestone saved</string>
+    <string name="title_empty_error">Title cannot be empty</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="edit_project">Edit Project</string>
+    <string name="project_updated">Project updated successfully</string>
+    <!-- Add these to your strings.xml file -->
+    <string name="schedule_meeting">Schedule Meeting</string>
+    <string name="meeting_title">Meeting Title</string>
+    <string name="meeting_description">Description (optional)</string>
+    <string name="select_time">Select Time</string>
+    <string name="meeting_location">Location</string>
+    <string name="request_meeting">Request Meeting</string>
+    <string name="no_upcoming_meetings">No upcoming meetings scheduled</string>
+    <string name="no_past_meetings">No past meetings</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string-array name="meeting_durations">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>1.5 hours</item>
+        <item>2 hours</item>
+    </string-array>
+
+        <!-- Add these to your existing strings.xml file -->
+
+        <!-- Submission system strings -->
+
+        <string name="create_project_first">Create a project first before making submissions</string>
+        <string name="error_accessing_projects">Error accessing projects</string>
+
+        <!-- Other strings -->
+
+        <!-- Feedback Related Strings -->
+        <string name="feedback_title">Feedback</string>
+        <string name="error_user_not_logged_in">Error: User not logged in</string>
+        <string name="no_feedback_available">No feedback available yet</string>
+        <string name="error_no_internet">No internet connection</string>
+        <string name="error_permission_denied">Permission denied to access feedback</string>
+        <string name="error_loading_feedback">Error loading feedback</string>
+        <string name="error_unknown">Error: Unknown error occurred</string>
+        <string name="feedback_from">Feedback from %1$s</string>
+
+
+        <string name="no_students_assigned">No students assigned to you yet</string>
+        <string name="error_loading_students">Error loading students</string>
+        <string name="student_details">Student Details</string>
+        <string name="contact_information">Contact Information</string>
+        <string name="academic_information">Academic Information</string>
+    <!-- Add these to your strings.xml file -->
+    <string name="projects_title">Projects</string>
+    <string name="no_projects_found">No projects found</string>
+    <string name="error_loading_projects">Error loading projects</string>
+    <string name="project_details">Project Details</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="confirm_reject_title">Reject Project</string>
+    <string name="confirm_reject_message">Are you sure you want to reject this project? The student will need to revise and resubmit.</string>
+    <string name="project_approved">Project approved</string>
+    <string name="project_rejected">Project rejected</string>
+    <string name="error_updating_project">Error updating project status</string>
+
+        <!-- Add these to your strings.xml file -->
+        <string name="status_approved">Status: ✓ Approved</string>
+        <string name="status_rejected">Status: ✗ Rejected</string>
+        <string name="status_proposed">Status: ⟳ Proposed</string>
+    <!-- Add these string resources to your strings.xml file -->
+
+        <string name="project_info_unavailable">Project information not available</string>
+        <string name="error_parsing_project">Error parsing project data</string>
+        <string name="project_not_found">Project not found</string>
+        <string name="error_loading_project">Error loading project: %1$s</string>
+        <string name="student_not_assigned">Student: Not assigned</string>
+        <string name="student_not_found">Student: Not found</string>
+        <string name="student_error_loading">Student: Error loading</string>
+        <string name="unknown_student">Unknown Student</string>
+        <string name="student_name">Student: %1$s</string>
+        <string name="created_on_date">Created on: %1$s</string>
+        <string name="no_objectives">No objectives specified</string>
+d
+        <string name="unknown_supervisor">Unknown Supervisor</string>
+        <string name="current_supervisor_none">Current Supervisor: None</string>
+        <string name="current_supervisor_format">Current Supervisor: %1$s</string>
+        <string name="current_supervisor_error">Current Supervisor: Error loading</string>
+        <string name="error_loading_supervisors">Error loading supervisors</string>
+        <string name="select_student_message">Please select a student</string>
+        <string name="select_supervisor_message">Please select a supervisor</string>
+        <string name="supervisor_max_students_message">Supervisor has reached maximum allowed students</string>
+        <string name="supervisor_assigned_success">Supervisor assigned successfully</string>
+        <string name="error_assigning_supervisor">Error assigning supervisor: %1$s</string>
+
+
+
+
+    </resources>
+
+
+
+
+
+
+
+

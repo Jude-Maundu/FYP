@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fypapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_project"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FYPApplication"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".login.LoginActivity"
+            android:theme="@style/Theme.FYPApplication" />
+        <activity android:name=".login.RegisterActivity"
+            android:theme="@style/Theme.FYPApplication" />
+        <activity android:name=".student.StudentDashboardActivity"
+            android:theme="@style/Theme.FYPApplication" />
+        <activity android:name=".supervisor.SupervisorDashboardActivity"
+            android:theme="@style/Theme.FYPApplication" />
+        <!-- Inside your application tag -->
+        <activity
+            android:name=".student.StudentProfileActivity"
+            android:label="@string/profile"
+            android:parentActivityName=".student.StudentDashboardActivity" />
+
+        <activity
+            android:name=".student.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".student.StudentDashboardActivity" />
+        <!-- Add these activity declarations inside your <application> tag in AndroidManifest.xml -->
+        <activity
+            android:name=".supervisor.SupervisorProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".supervisor.SupervisorDashboardActivity" />
+        <activity
+            android:name=".supervisor.SupervisorSettingsActivity"
+            android:exported="false"
+            android:parentActivityName=".supervisor.SupervisorDashboardActivity" />
+        <!-- Add these activity declarations to your AndroidManifest.xml -->
+        <activity
+            android:name=".student.ProjectsListActivity"
+            android:exported="false"
+            android:parentActivityName=".student.StudentDashboardActivity" />
+        <activity
+            android:name=".student.ProjectCreationActivity"
+            android:exported="false"
+            android:parentActivityName=".student.ProjectsListActivity" />
+        <activity
+            android:name=".student.ProjectDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".student.ProjectsListActivity" />
+        <!-- Add this to your AndroidManifest.xml file inside the <application> tag -->
+        <activity
+            android:name=".student.ScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".student.StudentDashboardActivity" />
+        <activity android:name=".student.SubmissionActivity"
+            android:exported="false"
+            android:parentActivityName=".student.StudentDashboardActivity"/>
+        <activity
+            android:name=".student.SubmissionListActivity"
+            android:exported="false"
+            android:parentActivityName=".student.StudentDashboardActivity" />
+
+        <activity
+            android:name=".student.SubmissionDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".student.SubmissionListActivity" />
+
+        <!-- Add these inside the <application> tag -->
+
+        <!-- Feedback List Activity -->
+        <activity
+            android:name=".student.FeedbackListActivity"
+            android:exported="false"
+            android:label="Feedback"
+            android:parentActivityName=".student.StudentDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".student.StudentDashboardActivity" />
+        </activity>
+
+        <!-- Feedback Detail Activity (if you create one) -->
+        <!-- Add these activities inside your application tag in AndroidManifest.xml -->
+        <activity
+            android:name=".supervisor.SupervisorStudentsActivity"
+            android:exported="false"
+            android:parentActivityName=".supervisor.SupervisorDashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".supervisor.SupervisorDashboardActivity" />
+        </activity>
+
+        <activity
+            android:name=".supervisor.StudentDetailsActivity"
+            android:exported="false"
+            android:parentActivityName=".supervisor.SupervisorStudentsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".supervisor.SupervisorStudentsActivity" />
+        </activity>
+        <activity
+            android:name=".supervisor.SupervisorProjectsActivity"
+            android:exported="false"
+            android:parentActivityName=".supervisor.SupervisorDashboardActivity" />
+        <activity
+            android:name=".supervisor.SupervisorProjectDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".supervisor.SupervisorProjectsActivity" />
+
+
+    </application>
+</manifest>
