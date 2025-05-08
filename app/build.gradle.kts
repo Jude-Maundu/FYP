@@ -51,6 +51,7 @@ android {
         checkReleaseBuilds = false
         abortOnError = false
     }
+    buildToolsVersion = "35.0.1"
 }
 
 dependencies {

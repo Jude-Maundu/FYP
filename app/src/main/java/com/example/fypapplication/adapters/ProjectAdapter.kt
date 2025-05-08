@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
@@ -16,6 +17,9 @@ class ProjectAdapter(private val projects: List<Project>) :
     RecyclerView.Adapter<ProjectAdapter.ProjectViewHolder>() {
 
     private var onItemClickListener: ((Project) -> Unit)? = null
+    var onApproveClick: ((Project) -> Unit)? = null
+    var onDeclineClick: ((Project) -> Unit)? = null
+
     private val dateFormat = SimpleDateFormat("MMM dd, yyyy", Locale.getDefault())
 
     fun setOnItemClickListener(listener: (Project) -> Unit) {
@@ -46,6 +50,9 @@ class ProjectAdapter(private val projects: List<Project>) :
         private val textViewDate: TextView = itemView.findViewById(R.id.textViewProjectDate)
         private val textViewStudent: TextView = itemView.findViewById(R.id.textViewStudentName)
 
+        private val buttonApprove: Button = itemView.findViewById(R.id.buttonApprove)
+        private val buttonDecline: Button = itemView.findViewById(R.id.buttonDecline)
+
         fun bind(project: Project) {
             textViewTitle.text = project.title
 
@@ -61,30 +68,47 @@ class ProjectAdapter(private val projects: List<Project>) :
                 textViewStudent.visibility = View.GONE
             }
 
-            // Set status with appropriate styling
+            // Set status styling
             val statusColor: Int
             val backgroundColor: Int
 
             when (project.status.lowercase()) {
                 "approved" -> {
                     textViewStatus.text = "✓ Approved"
-                    statusColor = Color.parseColor("#4CAF50") // Green
-                    backgroundColor = Color.parseColor("#E8F5E9") // Light green background
+                    statusColor = Color.parseColor("#4CAF50")
+                    backgroundColor = Color.parseColor("#E8F5E9")
                 }
                 "rejected" -> {
                     textViewStatus.text = "✗ Rejected"
-                    statusColor = Color.parseColor("#F44336") // Red
-                    backgroundColor = Color.parseColor("#FFEBEE") // Light red background
+                    statusColor = Color.parseColor("#F44336")
+                    backgroundColor = Color.parseColor("#FFEBEE")
                 }
                 else -> {
                     textViewStatus.text = "⟳ Proposed"
-                    statusColor = Color.parseColor("#FFA000") // Amber
-                    backgroundColor = Color.parseColor("#FFF8E1") // Light amber background
+                    statusColor = Color.parseColor("#FFA000")
+                    backgroundColor = Color.parseColor("#FFF8E1")
                 }
             }
 
             textViewStatus.setTextColor(statusColor)
             cardProject.setCardBackgroundColor(backgroundColor)
+
+            // Show/Hide approve/decline buttons
+            if (project.status.lowercase() == "proposed") {
+                buttonApprove.visibility = View.VISIBLE
+                buttonDecline.visibility = View.VISIBLE
+
+                buttonApprove.setOnClickListener {
+                    onApproveClick?.invoke(project)
+                }
+
+                buttonDecline.setOnClickListener {
+                    onDeclineClick?.invoke(project)
+                }
+            } else {
+                buttonApprove.visibility = View.GONE
+                buttonDecline.visibility = View.GONE
+            }
         }
     }
 }
